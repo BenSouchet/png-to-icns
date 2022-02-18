@@ -1,4 +1,7 @@
 # PNG to ICNS
+<p align="center">
+<img width="613" alt="cover_png_to_icns" src="https://user-images.githubusercontent.com/17025808/154702281-8115f8ec-b092-4ba6-9831-e8973b774546.png">
+</p>
 
 A Bash / Shell script to convert your PNG images into Mac OS specific type ICNS (iconset) !
 

@@ -5,6 +5,10 @@
 
 A Bash / Shell script to convert your PNG images into Mac OS specific type ICNS (iconset) !
 
+## Image Requirements
+- Format should be PNG (transparency isn't mandatory).
+- Dimensions need to be **1024x1024** pixels.
+
 ## How to Use
 1. Let’s get started by downloading the project, and move into the newly created folder:
 ```shell
@@ -15,7 +19,7 @@ Cloning into 'png-to-icns'...
 ```
 Or copy/paste the script file `png_to_icns.sh` in a directory
 
-2. Optionally: Place the image (`.png`) you want to convert in the folder
+2. Optionally: Place the **1024x1024** pixels image (`.png`) you want to convert in the folder
 3. Start the script and give the path to the image as argument:  
 `-i` stand for `image_path`
 ```shell

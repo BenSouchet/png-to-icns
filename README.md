@@ -38,6 +38,6 @@ You cannot see or understand the error, [open an issue](https://github.com/BenSo
 - [How to use getopts in bash](https://stackoverflow.com/questions/16483119/an-example-of-how-to-use-getopts-in-bash)
 
 ## Author & maintainer
-CW Wizard has been created and is currently maintained by [Ben Souchet](https://github.com/BenSouchet).
+PNG to ICNS has been created and is currently maintained by [Ben Souchet](https://github.com/BenSouchet).
 
 The code present in this repository is under [MIT license](https://github.com/BenSouchet/png-to-icns/blob/main/LICENSE).

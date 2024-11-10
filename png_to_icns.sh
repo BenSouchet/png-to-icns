@@ -78,9 +78,7 @@ sips -z 256 256   -s format png "$image_path" --out "${output_iconset_name}/icon
 sips -z 256 256   -s format png "$image_path" --out "${output_iconset_name}/icon_256x256.png" > /dev/null
 sips -z 512 512   -s format png "$image_path" --out "${output_iconset_name}/icon_256x256@2x.png" > /dev/null
 sips -z 512 512   -s format png "$image_path" --out "${output_iconset_name}/icon_512x512.png" > /dev/null
-
-# Copy the original 1024 icon as 512@2x to avoid an unecessary call to sips
-cp "$image_path" $output_iconset_name/icon_512x512@2x.png
+sips -z 1024 1024 -s format png "$image_path" --out "${output_iconset_name}/icon_512x512@2x.png" > /dev/null
 
 # Create the iconset
 iconutil -c icns $output_iconset_name

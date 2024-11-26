@@ -61,6 +61,12 @@ If you cannot see or understand the error, [open an issue](https://github.com/Be
 - [Create icns icons for macos apps](https://www.codingforentrepreneurs.com/blog/create-icns-icons-for-macos-apps)
 - [How to use getopts in bash](https://stackoverflow.com/questions/16483119/an-example-of-how-to-use-getopts-in-bash)
 
+## Contibutors
+
+| [<img src="https://github.com/richb-hanover.png" width="60px;"/>](https://github.com/richb-hanover/) |
+| :---------------------------------------------: |
+| [Rich Brown](https://github.com/richb-hanover/) |
+
 ## Author & Maintainer
 
 PNG to ICNS has been created and is currently maintained by [Ben Souchet](https://github.com/BenSouchet).

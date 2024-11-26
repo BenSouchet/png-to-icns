@@ -19,3 +19,4 @@ Thumbs.db
 # Project Related Files
 *.icns
 *.png
+!rounded-rect-inset.png

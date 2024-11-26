@@ -69,18 +69,16 @@ output_iconset_name="${icon_name}.iconset"
 mkdir $output_iconset_name
 
 # Create the icon sizes
-sips -z 16 16     "$image_path" --out "${output_iconset_name}/icon_16x16.png" > /dev/null
-sips -z 32 32     "$image_path" --out "${output_iconset_name}/icon_16x16@2x.png" > /dev/null
-sips -z 32 32     "$image_path" --out "${output_iconset_name}/icon_32x32.png" > /dev/null
-sips -z 64 64     "$image_path" --out "${output_iconset_name}/icon_32x32@2x.png" > /dev/null
-sips -z 128 128   "$image_path" --out "${output_iconset_name}/icon_128x128.png" > /dev/null
-sips -z 256 256   "$image_path" --out "${output_iconset_name}/icon_128x128@2x.png" > /dev/null
-sips -z 256 256   "$image_path" --out "${output_iconset_name}/icon_256x256.png" > /dev/null
-sips -z 512 512   "$image_path" --out "${output_iconset_name}/icon_256x256@2x.png" > /dev/null
-sips -z 512 512   "$image_path" --out "${output_iconset_name}/icon_512x512.png" > /dev/null
-
-# Copy the original 1024 icon as 512@2x to avoid an unecessary call to sips
-cp "$image_path" $output_iconset_name/icon_512x512@2x.png
+sips -z 16 16     -s format png "$image_path" --out "${output_iconset_name}/icon_16x16.png" > /dev/null
+sips -z 32 32     -s format png "$image_path" --out "${output_iconset_name}/icon_16x16@2x.png" > /dev/null
+sips -z 32 32     -s format png "$image_path" --out "${output_iconset_name}/icon_32x32.png" > /dev/null
+sips -z 64 64     -s format png "$image_path" --out "${output_iconset_name}/icon_32x32@2x.png" > /dev/null
+sips -z 128 128   -s format png "$image_path" --out "${output_iconset_name}/icon_128x128.png" > /dev/null
+sips -z 256 256   -s format png "$image_path" --out "${output_iconset_name}/icon_128x128@2x.png" > /dev/null
+sips -z 256 256   -s format png "$image_path" --out "${output_iconset_name}/icon_256x256.png" > /dev/null
+sips -z 512 512   -s format png "$image_path" --out "${output_iconset_name}/icon_256x256@2x.png" > /dev/null
+sips -z 512 512   -s format png "$image_path" --out "${output_iconset_name}/icon_512x512.png" > /dev/null
+sips -z 1024 1024 -s format png "$image_path" --out "${output_iconset_name}/icon_512x512@2x.png" > /dev/null
 
 # Create the iconset
 iconutil -c icns $output_iconset_name
